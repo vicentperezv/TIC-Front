@@ -1,7 +1,7 @@
 import { LoginCredentials, RegisterData, AuthResponse } from '../types/auth';
 import { SensorData } from '../types/sensordata';
 
-const API_URL = 'http://127.0.0.1:8000'; 
+const API_URL = 'https://tic-api-production.up.railway.app'; 
 
 export const login = async (credentials: LoginCredentials): Promise<AuthResponse> => {
   const response = await fetch(`${API_URL}/login`, {
