@@ -117,7 +117,7 @@ const Dashboard = () => {
               </div>
               <LineChart
                 data={data? data.map(d => d.temperature) : []}
-                labels={data ? data.map(d => d.timestamp.toLocaleString()): []}
+                labels={data ? data.map(d =>new Date(d.timestamp).toLocaleString()): []}
                 label="Temperature"
                 color="#3B82F6"
                 unit="°C"
@@ -136,7 +136,7 @@ const Dashboard = () => {
               </div>
               <LineChart
                 data={data?data.map(d => d.noise) :[]}
-                labels={data?data.map(d => d.timestamp.toLocaleString()) : []}
+                labels={data?data.map(d =>new Date(d.timestamp).toLocaleString()) : []}
                 label="desibeles"
                 color="#10B981"
                 unit="dB"
@@ -154,7 +154,7 @@ const Dashboard = () => {
               </div>
               <LineChart
                 data={data?data.map(d => d.light) :[]}
-                labels={data?data.map(d => d.timestamp.toLocaleString()) : []}
+                labels={data?data.map(d =>new Date(d.timestamp).toLocaleString()) : []}
                 label="Candela"
                 color="#9333ea"
                 unit="cd"
