@@ -116,8 +116,8 @@ const Dashboard = () => {
                 </button>
               </div>
               <LineChart
-                data={data? data.map(d => d.temperature) : []}
-                labels={data ? data.map(d => d.timestamp): []}
+                data={data? data.reverse().map(d => d.temperature) : []}
+                labels={data ? data.reverse().map(d => d.timestamp): []}
                 label="Temperature"
                 color="#3B82F6"
                 unit="°C"
@@ -135,8 +135,8 @@ const Dashboard = () => {
                 </button>
               </div>
               <LineChart
-                data={data?data.map(d => d.noise) :[]}
-                labels={data?data.map(d => d.timestamp) : []}
+                data={data?data.reverse().map(d => d.noise) :[]}
+                labels={data?data.reverse().map(d => d.timestamp) : []}
                 label="desibeles"
                 color="#10B981"
                 unit="dB"
@@ -153,8 +153,8 @@ const Dashboard = () => {
                 </button>
               </div>
               <LineChart
-                data={data?data.map(d => d.light) :[]}
-                labels={data?data.map(d => d.timestamp) : []}
+                data={data?data.reverse().map(d => d.light) :[]}
+                labels={data?data.reverse().map(d => d.timestamp) : []}
                 label="Candela"
                 color="#9333ea"
                 unit="cd"
