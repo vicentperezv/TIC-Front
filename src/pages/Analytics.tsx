@@ -93,11 +93,7 @@ const Analytics = () => {
             title="Medidas de ruido"
             unit="dB"
           />
-          <MeasurementsTable
-            measurements={lightMeasurements}
-            title="Medidas de luz"
-            unit="cd"
-          />
+         
         </div>
       </div>
     </Layout>

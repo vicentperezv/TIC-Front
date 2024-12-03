@@ -142,24 +142,7 @@ const Dashboard = () => {
                 unit="dB"
               />
             </div>
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-xl font-semibold text-gray-800">Niveles de luminosidad</h2>
-                <button 
-                  onClick={() => setShowFullscreen(!showFullscreen)}
-                  className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
-                >
-                  <Maximize2 className="w-5 h-5 text-gray-600" />
-                </button>
-              </div>
-              <LineChart
-                data={data?data.map(d => d.light) :[]}
-                labels={data?data.map(d =>new Date(d.timestamp).toLocaleString()) : []}
-                label="Candela"
-                color="#9333ea"
-                unit="cd"
-              />
-            </div>
+            
           </div>
 
           
