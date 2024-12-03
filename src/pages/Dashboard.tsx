@@ -88,19 +88,7 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow-lg">
-            <div className="flex items-center justify-between mb-4">
-              <h3 className="text-lg font-semibold text-gray-800">Luminosidad</h3>
-              <span className="text-2xl font-bold text-purple-600">{averages.light} cd</span>
-            </div>
-            <p className="text-sm text-gray-600">Rango optimo:</p>
-            <div className="mt-2 h-2 bg-gray-200 rounded-full overflow-hidden">
-              <div 
-                className="h-full bg-purple-600 rounded-full"
-                style={{ width: `${(Number(averages.light) / 300) * 100}%` }}
-              ></div>
-            </div>
-          </div>
+          
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
